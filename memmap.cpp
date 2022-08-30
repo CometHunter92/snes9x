@@ -3645,7 +3645,7 @@ void CMemory::ApplyROMFixes (void)
 
 	// SRAM value fixes
 	if //(match_na("SUPER DRIFT OUT")      || // Super Drift Out
-		match_na("SATAN IS OUR FATHER!") ||
+		(match_na("SATAN IS OUR FATHER!") ||
 		match_na("goemon 4"))               // Ganbare Goemon Kirakira Douchuu
 		SNESGameFixes.SRAMInitialValue = 0x00;
 
